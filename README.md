@@ -12,6 +12,8 @@ Copyright (C) pech dai (<daipech@163.com>).
 
 oz01 was the author of EasyMath Library.
 
+Async++: Copyright (c) 2015 Amaneu d'Antras
+
 ##Screen Captures
 
 256 point lights:
