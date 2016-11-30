@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="async">
+      <UniqueIdentifier>{2187a1a5-9ad3-4bda-9acc-3312a0f79553}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="async\async++">
+      <UniqueIdentifier>{ea0574fb-06fd-468e-a58e-8f6e28005e25}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EasyAngle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyMath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyMatrix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyPool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyQuat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyVector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWindow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stll.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="STLLRasterizer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="async\async++.h">
+      <Filter>async</Filter>
+    </ClInclude>
+    <ClInclude Include="async\fifo_queue.h">
+      <Filter>async</Filter>
+    </ClInclude>
+    <ClInclude Include="async\internal.h">
+      <Filter>async</Filter>
+    </ClInclude>
+    <ClInclude Include="async\singleton.h">
+      <Filter>async</Filter>
+    </ClInclude>
+    <ClInclude Include="async\task_wait_event.h">
+      <Filter>async</Filter>
+    </ClInclude>
+    <ClInclude Include="async\work_steal_queue.h">
+      <Filter>async</Filter>
+    </ClInclude>
+    <ClInclude Include="async\async++\aligned_alloc.h">
+      <Filter>async\async++</Filter>
+    </ClInclude>
+    <ClInclude Include="async\async++\cancel.h">
+      <Filter>async\async++</Filter>
+    </ClInclude>
+    <ClInclude Include="async\async++\continuation_vector.h">
+      <Filter>async\async++</Filter>
+    </ClInclude>
+    <ClInclude Include="async\async++\parallel_for.h">
+      <Filter>async\async++</Filter>
+    </ClInclude>
+    <ClInclude Include="async\async++\parallel_invoke.h">
+      <Filter>async\async++</Filter>
+    </ClInclude>
+    <ClInclude Include="async\async++\parallel_reduce.h">
+      <Filter>async\async++</Filter>
+    </ClInclude>
+    <ClInclude Include="async\async++\partitioner.h">
+      <Filter>async\async++</Filter>
+    </ClInclude>
+    <ClInclude Include="async\async++\range.h">
+      <Filter>async\async++</Filter>
+    </ClInclude>
+    <ClInclude Include="async\async++\ref_count.h">
+      <Filter>async\async++</Filter>
+    </ClInclude>
+    <ClInclude Include="async\async++\scheduler.h">
+      <Filter>async\async++</Filter>
+    </ClInclude>
+    <ClInclude Include="async\async++\scheduler_fwd.h">
+      <Filter>async\async++</Filter>
+    </ClInclude>
+    <ClInclude Include="async\async++\task.h">
+      <Filter>async\async++</Filter>
+    </ClInclude>
+    <ClInclude Include="async\async++\task_base.h">
+      <Filter>async\async++</Filter>
+    </ClInclude>
+    <ClInclude Include="async\async++\traits.h">
+      <Filter>async\async++</Filter>
+    </ClInclude>
+    <ClInclude Include="async\async++\when_all_any.h">
+      <Filter>async\async++</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EasyMath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stll.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="STLLRasterizer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="async\scheduler.cpp">
+      <Filter>async</Filter>
+    </ClCompile>
+    <ClCompile Include="async\threadpool_scheduler.cpp">
+      <Filter>async</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

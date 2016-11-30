@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{046BF6DA-7D3A-4736-89AC-18A27C053D2D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TestSTLL</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="async\async++.h" />
+    <ClInclude Include="async\async++\aligned_alloc.h" />
+    <ClInclude Include="async\async++\cancel.h" />
+    <ClInclude Include="async\async++\continuation_vector.h" />
+    <ClInclude Include="async\async++\parallel_for.h" />
+    <ClInclude Include="async\async++\parallel_invoke.h" />
+    <ClInclude Include="async\async++\parallel_reduce.h" />
+    <ClInclude Include="async\async++\partitioner.h" />
+    <ClInclude Include="async\async++\range.h" />
+    <ClInclude Include="async\async++\ref_count.h" />
+    <ClInclude Include="async\async++\scheduler.h" />
+    <ClInclude Include="async\async++\scheduler_fwd.h" />
+    <ClInclude Include="async\async++\task.h" />
+    <ClInclude Include="async\async++\task_base.h" />
+    <ClInclude Include="async\async++\traits.h" />
+    <ClInclude Include="async\async++\when_all_any.h" />
+    <ClInclude Include="async\fifo_queue.h" />
+    <ClInclude Include="async\internal.h" />
+    <ClInclude Include="async\singleton.h" />
+    <ClInclude Include="async\task_wait_event.h" />
+    <ClInclude Include="async\work_steal_queue.h" />
+    <ClInclude Include="EasyAngle.h" />
+    <ClInclude Include="EasyMath.h" />
+    <ClInclude Include="EasyMatrix.h" />
+    <ClInclude Include="EasyPool.h" />
+    <ClInclude Include="EasyQuat.h" />
+    <ClInclude Include="EasyVector.h" />
+    <ClInclude Include="MainWindow.h" />
+    <ClInclude Include="stll.h" />
+    <ClInclude Include="STLLRasterizer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="async\scheduler.cpp" />
+    <ClCompile Include="async\threadpool_scheduler.cpp" />
+    <ClCompile Include="EasyMath.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="stll.cpp" />
+    <ClCompile Include="STLLRasterizer.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
